@@ -1,10 +1,10 @@
 import * as core from "@actions/core";
 import { readFile, writeFile } from "fs/promises";
-import { query } from "@anthropic-ai/claude-agent-sdk";
+import { query } from "@yassinehamouten/glm-agent-sdk";
 import type {
   SDKMessage,
   SDKResultMessage,
-} from "@anthropic-ai/claude-agent-sdk";
+} from "@yassinehamouten/glm-agent-sdk";
 import type { ParsedSdkOptions } from "./parse-sdk-options";
 
 const EXECUTION_FILE = `${process.env.RUNNER_TEMP}/claude-execution-output.json`;
